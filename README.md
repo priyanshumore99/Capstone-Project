@@ -19,19 +19,35 @@ Capstone-Project/
 │
 ├── data/
 │   └── sample_images/        # Exported Fashion-MNIST test images (.png)
+│       ├── 01_trouser.png
+│       ├── 02_pullover.png
+│       ├── 04_coat.png
+│       ├── 06_shirt.png
+│       └── 09_ankle_boot.png
 │
-├── models/
-│   ├── return_risk_model.pkl # Tuned Random Forest pipeline
-│   └── product_classifier.pt # Transfer-learning CNN weights
+├── models/                   # Saved ML/DL model artifacts
+│   ├── product_classifier.keras
+│   ├── product_classifier.pt
+│   ├── product_classifier.weights.h5
+│   └── return_risk_model.pkl
 │
-├── transcripts/              # Demo conversations with the agent
+├── transcripts/              # Agent demo conversations
+│   ├── 01_policy_return_window.txt
+│   ├── 02_policy_cod_refund.txt
+│   ├── 03_return_risk_tool.txt
+│   ├── 04_image_classifier_tool.txt
+│   ├── 05_multiturn_state_carried.txt
+│   ├── 06_fresh_conversation_reset.txt
+│   ├── 07_prompt_injection_blocked.txt
+│   └── 08_ungrounded_policy_refused.txt
 │
-├── generate_orders.py         # Script to generate seeded orders dataset
-├── orders_dataset.csv         # Deterministic dataset (6,000 rows)
-├── return_risk_scoring.py     # Training + evaluation for Part 1
-├── product_image_categoriser.py # Training + evaluation for Part 2
-├── flipkart_support_agent.py  # LangGraph agent (Part 3)
-└── README.md                  # Project documentation
+├── flipkart_support_agent.py     # LangGraph agent (Part 3)
+├── generate_orders.py            # Dataset generator (Part 1)
+├── orders_dataset.csv            # Seeded dataset (6,000 rows)
+├── product_image_categoriser.py  # Transfer learning classifier (Part 2)
+├── return_risk_scoring.py        # Return-risk model training/evaluation
+├── requirements.txt              # Project dependencies
+└── README.md                     # Documentation
 ```
 
 ### ⚙️ Setup Instructions
