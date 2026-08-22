@@ -58,7 +58,7 @@ cd Capstone-Project
 pip install -r requirements.txt
 ```
 
-## 🧩 Part 1 – Return‑Risk Scoring Pipeline
+## Part 1 – Return‑Risk Scoring Pipeline
 Goal: Predict whether an order will be returned.
 
 ### Steps to Reproduce
@@ -85,11 +85,17 @@ python3 return_risk_scoring.py
 * Threshold t*_rf recorded for risk buckets.
 <br>
 
-## 👗 Part 2 – Product Image Categoriser
+## Part 2 – Product Image Categoriser via Transfer Learning
 **Goal:** Classify apparel/footwear/accessory images.
 <br>
 
 ### Steps to Reproduce
+Run the below command to generate dataset.
+```
+python3 product_image_categoriser.py
+```
+<br>
+
 1. Dataset: **Fashion‑MNIST** (70,000 images, 10 classes).
 - Train: 60,000 → split into train + validation.
 * Test: 10,000 untouched until final evaluation.
@@ -118,7 +124,7 @@ python3 return_risk_scoring.py
 * Sample images exported to data/sample_images/.
 <br>
 
-## 🤖 Part 3 – Flipkart Support Agent (LangGraph)
+## Part 3 – Flipkart Support Agent (LangGraph)
 **Goal:** One assistant that integrates policy KB + both trained models.
 <br>
 
@@ -146,7 +152,7 @@ Runs in MOCK_LLM mode by default.
 <br>
 <br>
 
-## 📜 Example Transcript
+## Example Transcript
 Located in transcripts/. Includes:
 - Policy Q&A via RAG.
 - Return‑risk prediction for an order.
