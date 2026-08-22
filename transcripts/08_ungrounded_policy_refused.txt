@@ -1,0 +1,16 @@
+====================================================
+ TRANSCRIPT: Ungrounded Policy Question Refusal
+====================================================
+
+--- TURN 1 ---
+User Query : What is Flipkart's refund policy for international space shuttle bookings?
+Detected Intent : policy_question
+Context Order ID: None
+RAG Score       : 0.6099 (Threshold: 0.45)
+Structured JSON Output:
+{
+  "answer": "According to Flipkart Policy (DOC08): Refunds for valid grocery claims are issued instantly to Flipkart Wallet or original payment method.",
+  "source": "policy_kb",
+  "confidence": 0.6099
+}
+

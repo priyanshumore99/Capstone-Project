@@ -1,0 +1,15 @@
+====================================================
+ TRANSCRIPT: Fresh Conversation Showing State Reset
+====================================================
+
+--- TURN 1 ---
+User Query : Can you check the return risk for this order?
+Detected Intent : return_risk_question
+Context Order ID: None
+Structured JSON Output:
+{
+  "answer": "Order Return Risk Assessment for the specified order: Predicted return probability is 18.5%, placing it in the 'Low Risk' risk bucket (Cut points anchored to t*_rf=0.35).",
+  "source": "return_risk_tool",
+  "confidence": 0.95
+}
+

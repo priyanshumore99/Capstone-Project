@@ -1,0 +1,15 @@
+====================================================
+ TRANSCRIPT: Return Risk Tool Execution
+====================================================
+
+--- TURN 1 ---
+User Query : What is the return risk for my order ORD9928?
+Detected Intent : return_risk_question
+Context Order ID: ORD9928
+Structured JSON Output:
+{
+  "answer": "Order Return Risk Assessment for Order ORD9928: Predicted return probability is 18.5%, placing it in the 'Low Risk' risk bucket (Cut points anchored to t*_rf=0.35).",
+  "source": "return_risk_tool",
+  "confidence": 0.95
+}
+

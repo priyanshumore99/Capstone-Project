@@ -1,0 +1,16 @@
+====================================================
+ TRANSCRIPT: Policy Question 1 - Return Window
+====================================================
+
+--- TURN 1 ---
+User Query : What is the return window for clothing and shoes?
+Detected Intent : policy_question
+Context Order ID: None
+RAG Score       : 0.67 (Threshold: 0.45)
+Structured JSON Output:
+{
+  "answer": "According to Flipkart Policy (DOC01): Apparel and Footwear categories are eligible for return within a 7-day window from the date of delivery.",
+  "source": "policy_kb",
+  "confidence": 0.67
+}
+
