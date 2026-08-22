@@ -89,6 +89,11 @@ python3 return_risk_scoring.py
 **Goal:** Classify apparel/footwear/accessory images.
 <br>
 
+Run the below command to generate dataset.
+```
+python3 product_image_categoriser.py
+```
+
 ### Steps to Reproduce
 1. Dataset: **Fashion‑MNIST** (70,000 images, 10 classes).
 - Train: 60,000 → split into train + validation.
