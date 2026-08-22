@@ -1,0 +1,27 @@
+====================================================
+ TRANSCRIPT: Multi-turn State Carried Across Turns
+====================================================
+
+--- TURN 1 ---
+User Query : I want to query about order ORD7712.
+Detected Intent : policy_question
+Context Order ID: ORD7712
+RAG Score       : 0.2336 (Threshold: 0.45)
+Structured JSON Output:
+{
+  "answer": "Refusal: Your query could not be verified against Flipkart policy documents. Highest retrieval similarity score was 0.2336, which is below the required groundedness threshold of 0.4500.",
+  "source": "policy_kb",
+  "confidence": 0.0
+}
+
+--- TURN 2 ---
+User Query : Can you check the return risk for this order?
+Detected Intent : return_risk_question
+Context Order ID: ORD7712
+Structured JSON Output:
+{
+  "answer": "Order Return Risk Assessment for Order ORD7712: Predicted return probability is 18.5%, placing it in the 'Low Risk' risk bucket (Cut points anchored to t*_rf=0.35).",
+  "source": "return_risk_tool",
+  "confidence": 0.95
+}
+
