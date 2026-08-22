@@ -1,4 +1,4 @@
-﻿# Capestone Project
+﻿# Capstone Project
 This repository contains a capstone project that unifies three AI components into one connected support system for Flipkart’s catalog and customer support teams:
 
 1. **Return‑Risk Model**  – predicts whether an order is likely to be returned.
